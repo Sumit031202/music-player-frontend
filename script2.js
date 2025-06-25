@@ -1,7 +1,7 @@
 let songs = [];
 let songsUrl = [];
 async function getAlbums() {
-    let a = await fetch("/api/artists");
+    let a = await fetch("https://music-player-backend-fdip.onrender.com/api/artists");
     let albums = await a.json();
     console.log(albums);
     let cardContainer = document.querySelector(".cardContainer");
@@ -61,7 +61,7 @@ const playMusic = (url, index) => {
     }, 300);
 }
 async function getSongs(artist) {
-    let a = await fetch(`api/songs/${artist}`);
+    let a = await fetch(`https://music-player-backend-fdip.onrender.com/api/songs/${artist}`);
     let songsJson = await a.json();
     console.log(songsJson);
     return songsJson;
