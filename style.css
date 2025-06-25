@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    width:100vw;
+    height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    height: 100%;
+}
+.left{
+    width: 30vw;
+    height: 100vh;
+    border:5px black solid;
+    box-sizing: border-box;
+}
+.songsList{
+    height: 70%;
+    overflow-y:auto;
+        scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #444 #1a1a1a; /* Dark thumb and track */
+
+}
+.songsList ul{
+    list-style: none;
+    margin: auto;
+    /* height: 355px; */
+    /* border: red 2px ; */
+}
+.songsList li{
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    border: 2px solid rgba(255, 255, 255, 0.589);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    cursor:pointer;
+}
+
+.right{
+    width: 70vw;
+    height: 100vh;
+    border:5px black solid;
+    box-sizing: border-box;
+    position: relative;
+}
+.cardContainer{
+    height: 72vh;
+    width: 96%;
+    margin:auto;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+/* scroll bar  */
+.cardContainer {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #444 #1a1a1a; /* Dark thumb and track */
+}
+
+/* Webkit-based browsers (Chrome, Edge, Safari) */
+.cardContainer::-webkit-scrollbar {
+    width: 10px; /* Slightly wider for better aesthetics */
+    border-radius: 10px; /* Rounded scrollbar */
+}
+
+.cardContainer::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Dark background track */
+    border-radius: 10px; /* Smooth rounded corners */
+}
+
+.cardContainer::-webkit-scrollbar-thumb {
+    background: #444; /* Dark gray thumb */
+    border-radius: 10px; /* Rounded scrollbar thumb */
+    border: 2px solid #1a1a1a; /* Subtle shadow effect */
+}
+
+.cardContainer::-webkit-scrollbar-thumb:hover {
+    background: #666; /* Lighter shade on hover for better visibility */
+}
+
+.card{
+    display: inline-block;
+    height: 260px;
+    width: 180px;
+    background-color: rgb(30, 29, 29);
+    border:2px black;
+}
+.card img{
+    display:block;
+    padding:10px;
+    margin:auto;
+    height: 70%;
+    width:100%;
+    box-sizing: border-box;
+    /* position: relative; */
+    /* padding:5px; */
+}
+.card .image{
+    position: relative;
+}
+.card .playbtn{
+    position: absolute;
+    right:50px;
+    bottom:40px;
+    width:24px;
+    height: 24px;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+}
+.card .details{
+    /* background-color: blue; */
+    height: 25%;
+    width: 90%;
+    margin:auto;
+    overflow: hidden;
+}
+.card:hover{
+    background-color: rgb(21, 21, 21);
+}
+.card:hover .playbtn{
+    opacity: 1;
+    bottom:50px;
+}
+/* playbar */
+.playBar{
+    display: inline-block;
+    /* background-color: red; */
+    width: 100%; /* Makes it scale with the .right class */
+    height: 10vh; /* Adjust as needed */
+    margin:auto;
+    background: #1c201c; /* Dark theme */
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    /* padding: 0 20px; */
+    border-radius: 10px; /* Rounded corners */
+}
+.seekbar{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    position: relative;
+    bottom:-17px;
+    height: 2px;
+    border:2px solid white;
+    width: 98%;
+    margin: auto;
+    cursor:pointer;
+}
+.seekbar #dot{
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    left:0%;
+    /* left:100%; */
+    transition: left 0.3s ease;
+}
+.songbtns{
+    cursor: pointer;
+}
+
+.header{
+    justify-content: space-between;
+}
+.home{
+    height: 28vh;
+}
+.home ul li{
+    display:flex;
+    gap:7px;
+    padding: 5px;;
+}
+.library{
+    height: 70vh;
+    position: relative;
+}
+.footer div{
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 5px;
+}
+.footer a{
+    color:gray;
+    text-decoration:none;
+}

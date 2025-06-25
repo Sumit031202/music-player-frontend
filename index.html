@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container border flex">
+        <div class="left bg-grey">
+            <div class="home b-2">
+                <div class="spotify-logo"><img class="invert" src="svgs/logo.svg" alt="logo"></div>
+                <ul class="p-10">
+                    <li class="flex items-center"><img class="logo invert" src="svgs/home.svg" alt="home">Home</li>
+                    <li class="flex items-center"><img class="logo invert" src="svgs/search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <div class="library b-2">
+                <div class="heading flex items-center">
+                    <img class="logo invert pl-15 p-10" src="svgs/library.svg" alt="library_logo">
+                    <h3>Your Library</h3>
+                    <div class="logo"><img src="svgs/" alt=""></div>
+                </div>
+                <div class="songsList">
+                        <ul>
+                            <!-- <li>aloo</li> -->
+                        </ul>
+                    </div>
+                <div class="footer p-10">
+                    <div class="flex g-15">
+                        <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                        <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                        <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">Cookies</a>
+                    </div>  
+                </div>
+            </div>
+            
+        </div>
+        <div class="right bg-grey b-2">
+            <div class="header flex p-5 b-2 bg-black">
+                <div class="btns flex g-5">
+                    <button class="leftbtn invert rounded-20 p-5"><img class="logo" src="svgs/left_arrow.svg" alt="back button"></button>
+                    <button class="rightbtn invert rounded-20 p-5"><img class="logo" src="svgs/right_arrow.svg" alt="forward button"></button>
+                </div>
+                <div class="log flex g-5">
+                    <button class="plr-10 rounded-20">Login</button>
+                    <button class="plr-10 rounded-20">SignUp</button>
+                </div>
+            </div>
+            <div class="playlist">
+
+                <h3 class="p-10">Spotify Playlists</h3>
+                <div class="cardContainer flex g-20">
+                    <!-- demo card  -->
+                    <!-- <div class="card rounded-10">
+                        <div class="image">
+                            <img class="rounded-15" src="images/youHauntMe.png" alt="You haunt me">
+                            <div class="playbtn">
+                                <img id="play" src="svgs/play.svg" alt="playbtn">
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4>You Haunt Me</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div> -->
+                    
+                </div>
+                
+            </div>
+            <div class="seekbar">
+                <div id="dot"></div>
+            </div>
+            <div class="playBar flex justify-btw items-center">
+                <div class="songInfo w-150 flex justify-center">
+                    You haunt me
+                </div>
+                <div class="songbtns w-150 flex justify-center">
+                    <img id="prevbtn" class="logo-b" src="svgs/prvSong.svg" alt="">
+                    <img id="playbtn" class="logo-b" src="svgs/play.svg" alt="">
+                    <img id="nextbtn" class="logo-b" src="svgs/nxtSong.svg" alt="">
+                </div>
+                <div class="duration w-150 flex justify-center">
+                    00:00/00:00
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+#play{
+    height: 65px;
+    width: 65px;
+}
+
+.block{
+    display: block;
+}
+.flex{
+    display: flex;
+}
+.justify-btw{
+    /* display:flex; */
+    justify-content: space-around;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.spotify-logo{
+    margin:5px;
+}
+.logo{
+    height: 24px;
+    width: 24px;
+}
+.logo-b{
+    height: 40px;
+    width: 40px;
+}
+.invert{
+    filter:invert(1);
+    border:none;
+}
+
+/* padding */
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding:15px;
+}
+.p-5{
+    padding: 5px;
+}
+.plr-10{
+    padding:0 10px;
+}
+.pl-15{
+    padding-left:15px;
+}
+.pl-20{
+    padding-left:20px;
+}
+
+/* width */
+.w-150{
+    width: 150px;
+}
+
+/* colors */
+.bg-grey{
+    background-color: #292929;
+}
+.bg-black{
+    background-color: black;
+}
+
+/* margin */
+.b-2{
+    border: 2px solid black;
+}
+
+/* gap */
+.g-5{
+    gap:5px;
+}
+.g-15{
+    gap: 15px;
+}
+.g-20{
+    gap: 20px;
+}
+
+/* rounded */
+.rounded-20{
+    border-radius: 20px;
+}
+.rounded-10{
+    border-radius: 10px;
+}
+.rounded-15{
+    border-radius:15px;
+}
