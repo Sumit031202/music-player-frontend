@@ -13,6 +13,8 @@ It’s currently in the development phase, so a few features may not work as exp
 2. The songs from that playlist will then be fetched and shown.
 3. Click on any song from the list, and it will start playing.
 
+⚠️ *Note: There may be a 10–15 second delay when loading playlists, as the backend is hosted on Render, which puts the server to sleep after 15 minutes of inactivity.*
+
 ---
 
 Stay tuned for updates and new features!
